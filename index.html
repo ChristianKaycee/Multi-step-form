@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>web practice 37</title>
+</head>
+
+<body>
+    <div class="container container-1">
+        <section class="steps">
+            <div class="box one">
+                <button class="step step-one current">1</button>
+                <div class="info">
+                    <p class="light">step 1</p>
+                    <p class="bold">Your Info</p>
+                </div>
+            </div>
+            <div class="box two">
+                <button class="step step-two">2</button>
+                <div class="info">
+                    <p class="light">step 2</p>
+                    <p class="bold">Select Plan</p>
+                </div>
+            </div>
+            <div class="box three">
+                <button class="step step-three">3</button>
+                <div class="info">
+                    <p class="light">step 3</p>
+                    <p class="bold">Add-Ons</p>
+                </div>
+            </div>
+            <div class="box four">
+                <button class="step step-four">4</button>
+                <div class="info">
+                    <p class="light">step 4</p>
+                    <p class="bold">Summary</p>
+                </div>
+            </div>
+        </section>
+        <aside class="right">
+            <form method="get">
+                <!--Form -1 -->
+                <div class="form form-1">
+                    <p class="head">Personal info</p>
+                    <p>Please provide your name, email address and phone number</p>
+
+                    <div class="input">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="e.g. Kingdavid Christian"  required>
+                    </div>
+                    <div class="input">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="e.g. kingshowplays@icloud.com" required>
+                    </div>
+                    <div class="input">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="e.g. +234 807 349 0916" required>
+                    </div>
+                    <button class="next go-two">Next Step</button>
+                </div>
+                <!--Form -2 -->
+                <div class="form form-2">
+                    <p class="head">Select your plan</p>
+                    <p>You have option of monthly or yearly billing.</p>
+                    <div class="plans">
+                        <div class="plan-container">
+                            <input type="radio" class="radio" name="plan-choosen" id="arcade" value="Arcade" data-price="9">
+                            <label for="arcade" class="plan">
+                                <div class="img"><img src="./img/icon-arcade.svg" alt="icon-arcade"></div>
+                                <div class="content">
+                                    <p class="bold formonth">Arcade</p>
+                                    <p class="bold hidden foryear">Arcade+</p>
+                                    <p class="light price monthly">9</p>
+                                    <p class="light price hidden annual">90</p>
+                                    <p class="bold hidden free">2 months free</p>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="plan-container">
+                            <input type="radio" class="radio" name="plan-choosen" id="advanced" value="Advanced" data-price="12">
+                            <label for="advanced" class="plan">
+                                <div class="img"><img src="./img/icon-advanced.svg" alt="icon-advanced"></div>
+                                <div class="content">
+                                    <p class="bold formonth">Advanced</p>
+                                    <p class="bold hidden foryear">Advanced+</p>
+                                    <p class="light price monthly">12</p>
+                                    <p class="light price hidden annual">120</p>
+                                    <p class="bold hidden free">2 months free</p>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="plan-container">
+                            <input type="radio" class="radio" name="plan-choosen" id="pro" value="Pro" data-price="15">
+                            <label for="pro" class="plan">
+                                <div class="img"><img src="./img/icon-pro.svg" alt="icon-pro"></div>
+                                <div class="content">
+                                    <p class="bold formonth">Pro</p>
+                                    <p class="bold hidden foryear">Pro+</p>
+                                    <p class="light price monthly">15</p>
+                                    <p class="light price hidden annual">150</p>
+                                    <p class="bold hidden free">2 months free</p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="choose">
+                        <p class="be-bold" id="month">Monthly</p>
+                        <div class="toggle">
+                            <input type="checkbox" class="check">
+                            <div class="bar"></div>
+                        </div>
+                        <p id="year">Yearly</p>
+                    </div>
+                    <div class="btn">
+                        <button class="back light go-one">Go Back</button>
+                        <button class="next go-three">Next Step</button>
+                    </div>
+                </div>
+                <!--Form -3 -->
+                <div class="form form-3">
+                    <p class="head">Pick Add-ons</p>
+                    <p>Add-ons help improve your gaming experience</p>
+                    <div class="options">
+                        <div class="option">
+                            <input type="checkbox" id="option-1" name="Online service" class="mycheck" data-price="1">
+                            <label for="option-1" class="opt">
+                                <div class="left">
+                                    <p class="bold">Online service</p>
+                                    <p>Access to multiplayer games</p>
+                                </div>
+                                <p class="price ons">1</p>
+                            </label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" id="option-2" name="Larger storage" class="mycheck" data-price="2">
+                            <label for="option-2" class="opt">
+                                <div class="left">
+                                    <p class="bold">Larger storage</p>
+                                    <p>Extra 1TB of cloud save</p>
+                                </div>
+                                <p class="price ons">2</p>
+                            </label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" id="option-3" name="Customizable Profile" class="mycheck" data-price="2">
+                            <label for="option-3" class="opt">
+                                <div class="left">
+                                    <p class="bold">Customizable Profile</p>
+                                    <p>Custom theme on your profile</p>
+                                </div>
+                                <p class="price ons">2</p>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <button class="back light go-two">Go Back</button>
+                        <button class="next go-four">Next Step</button>
+                    </div>
+                </div>
+                <!--Form -4 -->
+                <div class="form form-4">
+                    <p class="head">Finishing up</p>
+                    <p>Double-check everything looks OK before confirming.</p>
+                    <div class="final">
+                        <div class="list">
+                            <div class="list-left">
+                                <p class="myfinal"></p>
+                                <p><a href="#" class="change">Change</a></p>
+                            </div>
+                            <p class="price plan-price">0</p>
+                        </div>
+                        <div class="list mylist">
+                        </div>
+                    </div>
+                    <div class="total-box">
+                        <p>Total (per month)</p>
+                        <p class="total blue"></p>
+                    </div>
+                    <div class="btn">
+                        <button class="back light go-three">Go Back</button>
+                        <button class="next blue submit" type="submit">Confirm</button>
+                    </div>
+                </div>
+            </form>
+            <div class="thanks">
+                <img src="./img/icon-thank-you.svg" alt="thanks">
+                <p class="head">Thank you!</p>
+                <p>Thanks for confirmining your subscription! We hope you have fun using our platform. If you ever need
+                    support, please feel free to email us at support@KingShow.com </p>
+            </div>
+        </aside>
+    </div>
+    <footer>&copy; KingShowPlays. All rights Reserved.</footer>
+    <script defer src="./script.js"></script>
+</body>
+
+</html>
