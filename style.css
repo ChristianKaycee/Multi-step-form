@@ -434,4 +434,7 @@ footer{
     .content{
         gap: 0px;
     }
+    footer{
+        display:none;
+    }
 }
