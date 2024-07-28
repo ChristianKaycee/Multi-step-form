@@ -366,15 +366,7 @@ button.blue{
 .form-2,.form-3,.form-4,.thanks,.hidden{
     display: none;
 }
-footer{
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 20px 0px;
-    text-align: center;
-}
-
+/* Media Query */
 @media (max-width:800px){
     body{
         display: block;
@@ -433,10 +425,5 @@ footer{
     }
     .content{
         gap: 0px;
-    }
-    footer{
-        display:none;
-        opacity:0;
-        visibility:hidden;
     }
 }
