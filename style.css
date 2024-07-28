@@ -289,6 +289,9 @@ button.next{
 .price::after,.total::after{
     content: "/mo";
 }
+.annual::after{
+    content: "/yr";
+}
 #option-1,#option-2,#option-3{
     opacity: 0;
     pointer-events: none;
@@ -366,7 +369,15 @@ button.blue{
 .form-2,.form-3,.form-4,.thanks,.hidden{
     display: none;
 }
-/* Media Query */
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 20px 0px;
+    text-align: center;
+}
+
 @media (max-width:800px){
     body{
         display: block;
@@ -425,5 +436,8 @@ button.blue{
     }
     .content{
         gap: 0px;
+    }
+    footer{
+        display: none;
     }
 }
