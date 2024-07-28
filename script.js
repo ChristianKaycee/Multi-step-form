@@ -115,12 +115,13 @@ change.addEventListener("click", e => {
 });
 
 // Function to get add-on price
-function getAddOnPrice(ons) {
+function getAddOnPrice(ons, isYearly) {
     const addOns = {
-        "Online service": 1,
-        "Larger storage": 2,
-        "Customizable Profile": 2
+        "Online service": isYearly ? 10 : 1,
+        "Larger storage": isYearly ? 20 : 2,
+        "Customizable Profile": isYearly ? 20 : 2
     };
+
     return addOns[ons] || 0;
 }
 
@@ -151,7 +152,7 @@ function addCheckedItems() {
         checkedItemsList.appendChild(p);
 
         const pTwo = document.createElement('p');
-        pTwo.innerHTML = getAddOnPrice(item);
+        pTwo.innerHTML = getAddOnPrice(item, toggle.checked);
         pTwo.classList.add("price");
         checkedItemsList.appendChild(pTwo);
     });
@@ -173,7 +174,7 @@ function updateTotal() {
 
     checkboxes.forEach(checkbox => {
         if (checkbox.checked) {
-            total += getAddOnPrice(checkbox.name);
+            total += getAddOnPrice(checkbox.name, toggle.checked);
         }
     });
 
