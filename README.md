@@ -3,7 +3,7 @@ A multi step form that fully processes users input and calculates the total base
 
 # Practice project
 ---
-<a href="https://christiankaycee.github.io/Multi-step-form/">Live Site Link</a>
+<a href="https://multi-step-form-alpha-lovat.vercel.app">Live Site Link</a>
 
       -- Made with 💌
          -- By KingShow
